@@ -23,7 +23,7 @@ app.use("/api/stores", storeRoutes);
 app.use("/api/reservations", reservationRoutes);
 app.use("/api/zomato", zomatoRoutes);
 app.use("/api/easydiner", easyDinerRoutes);
-
+console.log("kiki");
 const startServer = async () => {
   try {
     await connectDB();
