@@ -1,0 +1,11 @@
+services:
+  mongo:
+    image: mongo:7
+    container_name: applypilot-mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - applypilot_mongo:/data/db
+
+volumes:
+  applypilot_mongo:
